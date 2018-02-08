@@ -17,8 +17,7 @@ ITRP_URL = 'https://api.itrp.com/v1/'
 HEADERS = {'X-ITRP-Account' : '', 'Content-Type' : 'application/json'}
 CONNECTION_DELAY = 1
 
-#REPORTFILENAME = "r:\Controls\ITRP daily reports\data.csv" 
-REPORTFILENAME = "/media/nas01/Controls/ITRP daily reports/data.csv"
+REPORTFILENAME = ""
 
 #r = requests.get(ITRP_URL+"requests"+"?api_token="+API_TOKEN + "&team=5807&status=waiting_for_customer&per_page=100" , headers = HEADERS, 
 #			proxies=PROXIES, verify=False)
