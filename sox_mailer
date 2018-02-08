@@ -19,22 +19,16 @@ import datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-SMTP_SERVER = '.canon-europe.com'
-MAIL_SENDER = '.@canon-europe.com'
-MAIL_CC = '.@canon-europe.com'
-MAIL_RECEPIENTS = ['', '@canon-europe.com']
+SMTP_SERVER = ''
+MAIL_SENDER = ''
+MAIL_CC = ''
+MAIL_RECEPIENTS = ['', '']
 
-AV_DATA_FILE = '/media/nas01/Controls/McAfee daily reports/data.csv'
-PATCH_DATA_FILE = '/media/nas01/Controls/SCCM daily reports/data.csv'
-ITRP_DATA_FILE = '/media/nas01/Controls/ITRP daily reports/data.csv'
+AV_DATA_FILE = ''
+PATCH_DATA_FILE = ''
+ITRP_DATA_FILE = ''
 
-# AV_DATA_FILE = 'r:/Controls/McAfee daily reports/data.csv'
-# PATCH_DATA_FILE = 'r:/Controls/SCCM daily reports/data.csv'
-# ITRP_DATA_FILE = "r:\Controls\ITRP daily reports\data.csv"
-
-COUNTRY_LIST = ['CAT', 'CBL', 'CCH', 'CCZ', 'CDE', 'CDK', 'CEA', 'CEE', 'CEL', 'CES', 'CEU', \
-				'CFI', 'CFR', 'CHU', 'CIT', 'CME', 'CNL', 'CNO', 'CPL', 'CPT', 'CRU', 'CSE', \
-				'CSK', 'CUK', 'CZA', 'IBE', 'IDE', 'INL']
+COUNTRY_LIST = []
 
 def main():
 	# step 0. initialize / define everything
@@ -120,13 +114,13 @@ def send_sox_mail(dat_compliance_level, patch_compliance_level, countries_below_
 	<html>
 	  <head></head>
 	  <body>
-	    <p>AV DAT level: <a href="r:\Controls\McAfee daily reports\McAfee SOX DAT file distribution v1.xlsx">%s</a><br>
-	       Patch level: <a href="r:\Controls\SCCM daily reports\Canon Patch Distribution v1.xlsx">%s</a><br>
+	    <p>AV DAT level: <a href="">%s</a><br>
+	       Patch level: <a href="">%s</a><br>
 	       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Countries with patch level below 90 percent: %s<br>
 	       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Countries incompliant for more than 14 days: %s<br>
-	       ITRP queue: <a href="https://canonit.itrp.com/inbox?vstate=assigned_to_my_team">%s</a> (%s since yesterday)<br>
+	       ITRP queue: <a href="">%s</a> (%s since yesterday)<br>
 	       <br>
-	       <a href='ReportServer_S1/Pages/ReportViewer.aspx?%%2FCanon%%20Reports%%20(Desktops)%%2FCanon%%20Health%%20Check%%20Reports%%2FCanon%%20Health%%20Check%%20Report%%20v2'>SCCM report</a><br>
+	       <a href=''>SCCM report</a><br>
 	    </p>
 	  </body>
 	</html>
