@@ -19,18 +19,15 @@ import datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-SMTP_SERVER = '.canon-europe.com'
-MAIL_SENDER = '.@canon-europe.com'
-MAIL_CC = '.@canon-europe.com'
+SMTP_SERVER = ''
+MAIL_SENDER = ''
+MAIL_CC = ''
 
-PATCH_DATA_FILE = '/media/nas01/Controls/SCCM daily reports/data.csv'
-# PATCH_DATA_FILE = 'r:/Controls/SCCM daily reports/data.csv'
+PATCH_DATA_FILE = ''
 
 DAYS_INCOMPLIANT_THRESHOLD = 10
 
-COUNTRY_LIST = ['CAT', 'CBL', 'CCH', 'CCZ', 'CDE', 'CDK', 'CEA', 'CEE', 'CEL', 'CES', 'CEU', 
-                'CFI', 'CFR', 'CHU', 'CIT', 'CME', 'CNL', 'CNO', 'CPL', 'CPT', 'CRU', 'CSE', 
-                'CSK', 'CUK', 'CZA', 'IBE', 'IDE', 'INL']
+COUNTRY_LIST = []
 
 ADDRESS_BOOK = {''}
 
@@ -77,7 +74,7 @@ def send_mail(recepients, country, days_incompliant):
             <br>
             Hi!<br>
             More than 10%% of active workstations in your NSO have troubles fetching Windows updates. Please have a look at the 
-            <a href='/ReportServer_S1/Pages/ReportViewer.aspx?%%2FCanon%%20Reports%%20(Desktops)%%2FCanon%%20Health%%20Check%%20Reports%%2FCanon%%20Health%%20Check%%20Report%%20v2'>
+            <a href=''>
             SCCM report</a> (numbers are clickable).<br>
             <br>
             If NSO is incompliant for more than 14 days - incident tickets will be raised via ITRP.<br>
