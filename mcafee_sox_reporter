@@ -13,8 +13,8 @@ import datetime
 SERVER = 'epo'
 USERNAME = ''
 PASSWORD = ''
-CSVFILENAME = "/media/nas01/Controls/McAfee daily reports/logs/" + datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S") + ".csv"
-REPORTFILENAME = "/media/nas01/Controls/McAfee daily reports/data.csv"
+CSVFILENAME = "" + datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S") + ".csv"
+REPORTFILENAME = ""
 
 
 def main():
