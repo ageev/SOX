@@ -9,17 +9,11 @@ import csv
 import time, datetime
 import operator
 
-
-#LOG_DIR = 'r:/Controls/SCCM daily reports/logs/'
-#DATA_DIR = 'r:/Controls/SCCM daily reports/'
-
-LOG_DIR = '/media/nas01/Controls/SCCM daily reports/logs/'
-DATA_DIR = '/media/nas01/Controls/SCCM daily reports/'
+LOG_DIR = ''
+DATA_DIR = ''
 
 
-COUNTRY_LIST = ['CAT', 'CBL', 'CCH', 'CCZ', 'CDE', 'CDK', 'CEA', 'CEE', 'CEL', 'CES', 'CEU', \
-				'CFI', 'CFR', 'CHU', 'CIT', 'CME', 'CNL', 'CNO', 'CPL', 'CPT', 'CRU', 'CSE', \
-				'CSK', 'CUK', 'CZA', 'IBE', 'IDE', 'INL']
+COUNTRY_LIST = []
 
 def main():
 
