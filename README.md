@@ -6,7 +6,7 @@ Don't worry, all code is sanitized.
 ## OS
 tested on Ubuntu 17.04, 17.10
 ## Log source
-mount NAS via /etc/fstab file:
+mount NAS via /etc/fstab file. SMBv1 should be used due to known issues with Samba and SMBv2:
 //nas/folder$   /media/nas01    cifs     vers=1.0,username=,domain=,password=,iocharset=utf8,sec=ntlm,file_mode=0777,dir_mode=0777 0       0
 ## Schedule reports
 crontab -e
