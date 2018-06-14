@@ -1,5 +1,7 @@
 # SOX
-SOX reporting automation.
+SOX reporting automation. Those scripts are highly specialised for my current employer. Yes, sometimes I use Github for backup :)
+Don't worry, all code is sanitized. 
+
 # Environment
 ## OS
 tested on Ubuntu 17.04, 17.10
